@@ -888,7 +888,7 @@ fn open_asio_audio_sink(
 
 /// ASIO 기본 버퍼 크기(프레임). 미지정 시 이 값으로 고정 오픈
 #[cfg(all(windows, feature = "asio-backend"))]
-const DEFAULT_ASIO_BUFFER_FRAMES: u32 = 64;
+const DEFAULT_ASIO_BUFFER_FRAMES: u32 = 32;
 
 #[cfg(all(windows, feature = "asio-backend"))]
 fn open_device_audio_sink(
